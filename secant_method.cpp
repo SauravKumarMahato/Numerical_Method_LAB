@@ -44,7 +44,7 @@ int main()
 
     cout << "The required root is : " << root(a, b) << endl;
 
-    cout << "Root doesn't lies in between " << a << " , " << b << endl;
+
 
     return 0;
 }
