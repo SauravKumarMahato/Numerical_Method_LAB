@@ -4,7 +4,7 @@
 using namespace std;
 
 float deri( float x, float y ){
-    return x*cos(x);
+    return x+y ;
 }
 
 void  euler(float x0, float y0, float xn , float h ){
