@@ -35,7 +35,7 @@ void  rk2(float x0, float y0, float xn , float h ){
 
 }
 
-void  rk3(float x0, float y0, float xn , float h ){
+void  rk4(float x0, float y0, float xn , float h ){
     float x= x0, y=y0,  k1 =0 , k2 = 0, k3 = 0, k4 = 0,  k=0 ;
 
     for (float i = x0 ; i <= xn ; i += h ){
@@ -59,6 +59,6 @@ int main(){
 
     euler(x0, y0, xn, h );
     rk2( x0, y0, xn, h );
-    rk3( x0, y0, xn, h );
+    rk4( x0, y0, xn, h );
     return 0;
 }
