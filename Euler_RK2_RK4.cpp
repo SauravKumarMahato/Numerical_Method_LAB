@@ -4,7 +4,7 @@
 using namespace std;
 
 float deri( float x, float y ){
-    return x+y ;
+    return x*x+2*x-y ;
 }
 
 void  euler(float x0, float y0, float xn , float h ){
@@ -13,7 +13,7 @@ void  euler(float x0, float y0, float xn , float h ){
     for (float i = x0 ; i <= xn ; i += h ){
         cout<< x << "   " << y << endl;
         y = y + h * deri(x, y);
-        x = x + h;
+        x = x + h; 
     }
     cout<< x << "   " << y << endl;
     cout<< "The required sol at x ="<< xn << " is : " << y << endl;
